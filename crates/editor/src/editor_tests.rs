@@ -17168,6 +17168,7 @@ async fn test_no_duplicated_completion_requests(cx: &mut TestAppContext) {
         }
     });
 
+    cx.executor().run_until_parked();
     cx.condition(|editor, _| editor.context_menu_visible())
         .await;
     cx.assert_editor_state("fn main() { let a = 2.ˇ; }");

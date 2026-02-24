@@ -1341,6 +1341,7 @@ async fn test_remap(cx: &mut gpui::TestAppContext) {
     });
     cx.set_state("ˇ1234\n56789", Mode::Normal);
     cx.simulate_keystrokes("g u");
+    cx.executor().run_until_parked();
     cx.assert_state("1234 567ˇ89", Mode::Normal);
 
     // test leaving command

@@ -243,6 +243,14 @@ members = [
 
     "tooling/perf",
     "tooling/xtask",
+
+    # ── Noetron Studio ─────────────────────────────────────────────────────
+    "crates/noetron_aiproj",
+    "crates/noetron_toggle",
+    "crates/noetron_ir",
+    "crates/noetron_db",
+    "crates/noetron_executor",
+    "crates/noetron_ui",
 ]
 default-members = ["crates/zed"]
 

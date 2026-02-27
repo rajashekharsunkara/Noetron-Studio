@@ -1,0 +1,15 @@
+[package]
+name = "noetron_aiproj"
+version = "0.1.0"
+edition.workspace = true
+publish.workspace = true
+description = "Noetron Studio — .aiproj project format, domain detection, template scaffolding"
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+toml.workspace = true
+tracing.workspace = true
+uuid.workspace = true
+chrono.workspace = true

@@ -1,0 +1,18 @@
+# Noetron Studio — ML Data Configuration
+# Edit in No-Code view (Data Management panel) or directly here.
+
+[source]
+type = "csv"
+path = "data/train.csv"
+
+[preprocessing]
+steps = [
+    { name = "drop_nulls" },
+    { name = "encode_labels" },
+    { name = "normalize", method = "standard" },
+]
+
+[split]
+val_size = 0.15
+test_size = 0.15
+random_state = 42

@@ -1,0 +1,14 @@
+[package]
+name = "noetron_db"
+version = "0.1.0"
+edition.workspace = true
+publish.workspace = true
+description = "Noetron Studio — noetron_db"
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+uuid.workspace = true
+chrono.workspace = true

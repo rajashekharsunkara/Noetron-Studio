@@ -3,7 +3,7 @@ name = "noetron_ui"
 version = "0.1.0"
 edition.workspace = true
 publish.workspace = true
-description = "Noetron Studio — noetron_ui"
+description = "Noetron Studio — no-code UI panels (GPUI)"
 
 [dependencies]
 anyhow.workspace = true
@@ -12,3 +12,8 @@ serde_json.workspace = true
 tracing.workspace = true
 uuid.workspace = true
 chrono.workspace = true
+gpui.workspace = true
+ui = { path = "../ui" }
+workspace = { path = "../workspace" }
+noetron_ir.workspace = true
+noetron_toggle.workspace = true

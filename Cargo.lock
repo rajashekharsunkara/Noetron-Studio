@@ -10848,11 +10848,12 @@ name = "noetron_toggle"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "chrono",
+ "gpui",
+ "noetron_ir",
  "serde",
- "serde_json",
  "tracing",
- "uuid",
+ "ui",
+ "workspace",
 ]
 
 [[package]]
@@ -10861,10 +10862,15 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "chrono",
+ "gpui",
+ "noetron_ir",
+ "noetron_toggle",
  "serde",
  "serde_json",
  "tracing",
+ "ui",
  "uuid",
+ "workspace",
 ]
 
 [[package]]
@@ -21829,6 +21835,7 @@ dependencies = [
  "miniprofiler_ui",
  "nc",
  "node_runtime",
+ "noetron_toggle",
  "notifications",
  "onboarding",
  "outline",

@@ -13,6 +13,6 @@ tracing.workspace = true
 uuid.workspace = true
 chrono.workspace = true
 tokio = { workspace = true, features = ["process", "io-util"] }
-noetron_ir = { path = "../noetron_ir" }
+noetron_ir.workspace = true
 noetron_db = { path = "../noetron_db" }
 rusqlite = { version = "0.32", features = ["bundled"] }

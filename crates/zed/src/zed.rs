@@ -46,6 +46,7 @@ use language_tools::lsp_log_view::LspLogToolbarItemView;
 use markdown::{Markdown, MarkdownElement, MarkdownFont, MarkdownStyle};
 use migrate::{MigrationBanner, MigrationEvent, MigrationNotification, MigrationType};
 use migrator::migrate_keymap;
+use noetron_toggle::NoetronToggleBar;
 use onboarding::DOCS_URL;
 use onboarding::multibuffer_hint::MultibufferHint;
 pub use open_listener::*;
@@ -1220,6 +1221,9 @@ fn initialize_pane(
             toolbar.add_item(basedpyright_banner, window, cx);
             let image_view_toolbar = cx.new(|_| image_viewer::ImageViewToolbarControls::new());
             toolbar.add_item(image_view_toolbar, window, cx);
+            // Noetron Studio — mode toggle bar (No-Code ↔ Full-Code)
+            let noetron_toggle = cx.new(|_| NoetronToggleBar::new());
+            toolbar.add_item(noetron_toggle, window, cx);
         })
     });
 }

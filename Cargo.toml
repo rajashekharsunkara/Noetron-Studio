@@ -386,6 +386,12 @@ miniprofiler_ui = { path = "crates/miniprofiler_ui" }
 nc = { path = "crates/nc" }
 net = { path = "crates/net" }
 node_runtime = { path = "crates/node_runtime" }
+noetron_aiproj = { path = "crates/noetron_aiproj" }
+noetron_db = { path = "crates/noetron_db" }
+noetron_executor = { path = "crates/noetron_executor" }
+noetron_ir = { path = "crates/noetron_ir" }
+noetron_toggle = { path = "crates/noetron_toggle" }
+noetron_ui = { path = "crates/noetron_ui" }
 notifications = { path = "crates/notifications" }
 ollama = { path = "crates/ollama" }
 onboarding = { path = "crates/onboarding" }

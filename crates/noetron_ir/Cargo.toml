@@ -3,12 +3,13 @@ name = "noetron_ir"
 version = "0.1.0"
 edition.workspace = true
 publish.workspace = true
-description = "Noetron Studio — noetron_ir"
+description = "Noetron Studio — IR engine: entity types, codegen (IR→Python), parser (Python→IR), sync"
 
 [dependencies]
 anyhow.workspace = true
 serde.workspace = true
 serde_json.workspace = true
+toml.workspace = true
 tracing.workspace = true
 uuid.workspace = true
 chrono.workspace = true

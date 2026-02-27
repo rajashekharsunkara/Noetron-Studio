@@ -99,5 +99,3 @@ fn write_file(path: &Path, content: &str) -> Result<()> {
     Ok(())
 }
 
-// Domain re-export for convenience
-pub use crate::manifest::Domain;
